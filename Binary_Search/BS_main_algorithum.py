@@ -9,7 +9,6 @@ def Binary_Search(nums, start, end, target):
     else:
         n = start + end 
         mid = n//2 
-        print(mid)
         if nums[mid] == target:
             return mid
         else:
@@ -20,8 +19,7 @@ def Binary_Search(nums, start, end, target):
 
 
 
-arr = [5,6,10,12,15,18,20]
+arr = [4,5,6,7,0,1,2,3]#[5,6,10,12,15,18,20]
 n = len(arr) - 1 
-ans = Binary_Search(arr, 0, n, 18)
-print(ans)
+ans = Binary_Search(arr, 0, n, 0)
 print(arr[ans])
