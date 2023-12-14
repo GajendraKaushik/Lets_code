@@ -18,7 +18,7 @@ def Binary_Search(nums, target):
         elif nums[mid] > target:
             right = mid - 1
         else:
-            mid = mid + 1
+            left = mid + 1
     return False
 
 
