@@ -1,5 +1,5 @@
 class Solution:
-    def majorityElement(self, nums: List[int]) -> int:
+    def majorityElement(nums):
 
 #+++  Navie approach first approach but got time limit eceeded +++#
         # max_count = 0

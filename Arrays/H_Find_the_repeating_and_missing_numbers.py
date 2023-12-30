@@ -35,8 +35,8 @@ def hashArray_approach_2(nums):
     hash =[0]*(n+1)
 
     for i in range(n):
-        hash[nums[i]] +=1
-    print(hash)
+        hash[nums[i]] += 1 
+    print(hash,"app")
 
     duplicate , missing = -1, -1 
 

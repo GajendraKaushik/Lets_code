@@ -39,7 +39,7 @@ def Optimal_approach(nums):
             left = mid + 1
 
         # eleminating the right half
-        elif nums[mid] < nums[mid+1]:
+        elif nums[mid] < nums[mid + 1]:
             right = mid - 1
 
         # special condition for reverse of peal element 
@@ -50,5 +50,35 @@ def Optimal_approach(nums):
 arr =  [1,2]#[1,5,1,2,1]#[1,2,1,3,5,6,4] 
 print(Optimal_approach(arr))
 
+# Better approach 
 
 
+def findPeakGrid(self, mat):
+        # find maximum
+        def maxEl( mat, n, m, col):
+            maxi = -1
+            ind = -1
+            for i in range(n):
+                if mat[i][col] > maxi:
+                    maxi = mat[i][col]
+                    ind = i
+            return ind
+        
+        n = len(mat)
+        m = len(mat[0])
+        low = 0
+        high = m - 1
+        # use BS to solve 
+        while low <= high:
+            mid = (low + high) // 2
+            row = maxEl(mat, n, m, mid)
+            left = mat[row][mid - 1] if mid - 1 >= 0 else -1
+            right = mat[row][mid + 1] if mid + 1 < m else -1
+
+            if mat[row][mid] > left and mat[row][mid] > right:
+                return [row, mid]
+            elif mat[row][mid] < left:
+                high = mid - 1
+            else:
+                low = mid + 1
+        return [-1, -1]
