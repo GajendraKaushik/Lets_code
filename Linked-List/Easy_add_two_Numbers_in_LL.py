@@ -50,7 +50,6 @@ def add_2_Numbers_LL(node1, node2):
     if carry:
         new_node = Node(carry)
         curr.next = new_node
-
     return dummy.next     
 
 ans1 = add_2_Numbers_LL(head1, head2)
