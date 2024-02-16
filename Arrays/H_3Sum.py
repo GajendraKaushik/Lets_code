@@ -34,7 +34,7 @@ def Optimal_3sum_two_Pointer(nums):
     for i in range(n):  # O(n)
         # we only wnat to unique elements 
         if i!=0 and  nums[i] == nums[i-1]:
-            continue;
+            continue
         # initialized two pointer
         j = i+1
         k = n-1

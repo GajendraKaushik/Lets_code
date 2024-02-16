@@ -119,7 +119,7 @@ print("nums2 :", nums2)
 
 # https://leetcode.com/problems/merge-sorted-array/ 
 
-def merge(nums1, num2, n ,m ):
+def merge(nums1, nums2, n ,m ):
     last = m + n - 1
 
     while m > 0 and n > 0 :

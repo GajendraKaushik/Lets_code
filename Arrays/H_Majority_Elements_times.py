@@ -65,7 +65,7 @@ def Moorse_voting_algo(arr):
     
     print(major_elements, "Moor")
 
-arr = [0,0,0]
+arr = [2, 2, 1, 1, 1, 2, 2] #[0,0,0]
 
 Moorse_voting_algo(arr)
 
@@ -77,7 +77,7 @@ def majorityElement(nums):
         counts = {}
         for num in nums:
             counts[num] = counts.get(num, 0) + 1
-        print(counts)
+        print(counts,"c")
 
         res = []
         for num, count in counts.items():
@@ -85,7 +85,7 @@ def majorityElement(nums):
                 res.append(num)
 
         print(res,"leetcode")
-arr = [0,0,0]
+arr = [2, 2, 1, 1, 1, 2, 2]#[0,0,0]
 majorityElement(arr)
 
        

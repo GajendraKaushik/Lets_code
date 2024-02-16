@@ -13,7 +13,7 @@ def merge(nums, low, mid, high):
             temp.append(nums[left])
         else:
             temp.append(nums[right])
-            cnt += (mid - left +1 )
+            cnt += (mid - left + 1 )
             right += 1 
 
     while (left <= mid):

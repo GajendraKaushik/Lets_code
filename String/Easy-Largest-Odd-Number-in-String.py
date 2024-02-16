@@ -12,6 +12,7 @@ def LargestOdd_Number(s):
         return str(num)
     while num:
         n = num %10
+        print(n)
         if n % 2 != 0:
             temp = n
             if odd < temp:
@@ -22,6 +23,6 @@ def LargestOdd_Number(s):
     else:
         return str(odd)
 
-ans = LargestOdd_Number("35427")
+ans = LargestOdd_Number("35428")
 print(ans)
     

@@ -1,7 +1,7 @@
 # Brute force approach
 def longest_subarray_with_zero_sum(nums):
     n = len(nums)
-    max_len = 0 ;
+    max_len = 0 
     for i in range(n):
         sum_zero = 0 ; 
         for j in range(i, n):
@@ -20,7 +20,7 @@ longest_subarray_with_zero_sum(arr)
 def optimal_approach_using_prefix_sum(nums):
     n = len(nums)
     max_len = 0
-    sum_zero = 0;
+    sum_zero = 0
     hashmap = {}
     for i in range(n):
         sum_zero = sum_zero + nums[i]
