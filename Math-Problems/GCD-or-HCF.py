@@ -1,6 +1,5 @@
 # GCD(12,24) = GCD(24-12, 24)
 
-
 def GCDorHFC(a,b):
     if a == 0:
         print(b)

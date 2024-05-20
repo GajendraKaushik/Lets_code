@@ -16,8 +16,6 @@ def Max_Nesting_Depth(s):
                 count = temp
         if c == ')':
             temp -= 1
-            # if temp > count :
-            #     count = temp 
     return count
 
 s = "(1+(2*3)+((8)/4))+1"

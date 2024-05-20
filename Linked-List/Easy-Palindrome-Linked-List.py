@@ -23,14 +23,13 @@ def isPalindrom_LL(head):
 # reverse LL   
 def reverseLL(head):
     p = q = None
-    temp = head 
+    temp = head                 
     while temp != None:
         p = q 
         q = temp
         temp = temp.next
         q.next = p
     return q 
-
 
 def Optime_isPalindrom(head):
     if head == None or head.next == None :

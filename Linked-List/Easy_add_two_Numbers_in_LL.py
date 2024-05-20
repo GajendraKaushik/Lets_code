@@ -52,6 +52,7 @@ def add_2_Numbers_LL(node1, node2):
         curr.next = new_node
     return dummy.next     
 
+print(head1, head2, "1, 2")
 ans1 = add_2_Numbers_LL(head1, head2)
 ans = ans1
 

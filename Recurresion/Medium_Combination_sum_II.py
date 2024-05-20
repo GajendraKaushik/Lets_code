@@ -57,6 +57,11 @@ def Better_approach(candidates, target):
 # print(ans)
 
 def Optimal_approach(candidates, target):
+    """
+    Param: 
+    Target:
+    Return:
+    """
     ans = []
     candidates.sort()
     def Combination_Sum_II(index, target, subArray):

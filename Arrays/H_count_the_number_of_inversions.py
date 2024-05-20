@@ -9,8 +9,8 @@ def merge(nums, low, mid, high):
     while(left <= mid and right <= high):
 
         if (nums[left] <= nums[right] ):
-            left +=1 
             temp.append(nums[left])
+            left +=1
         else:
             temp.append(nums[right])
             cnt += (mid - left + 1 )
@@ -28,7 +28,7 @@ def merge(nums, low, mid, high):
     return cnt 
 
 def merge_sort(nums, low ,high):
-    cnt = 0 
+    cnt = 0
     if low >= high:
         return cnt
     mid = math.floor((low+high)//2)
@@ -44,6 +44,7 @@ def Optimal_approach(nums):
 
 
 nums = [5,4,3,2,1]
+nums1 = [12,1,4,2,8,19]
 n = 5 
 cnt = Optimal_approach(nums)
 print(nums)

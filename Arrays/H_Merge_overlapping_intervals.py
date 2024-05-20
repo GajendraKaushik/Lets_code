@@ -16,7 +16,7 @@ def brute_approach(nums):
                 break
         ans.append([start, end])
     print(ans)
-    return ans;
+    return ans
 
 arr = [[1,3],[2,6],[8,10],[15,18]]
 print(brute_approach(arr))

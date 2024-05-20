@@ -1,0 +1,15 @@
+-> alsways write the type of parameter you are acpecting in a function also return typ. 
+like :  
+           def func(name: str, age:int) -> int :
+
+
+-> also inside the function if you write """ 
+   then you wull get param description mack sure to write that also 
+
+-> try to use list commprehention in place of for loop in your code. 
+
+-> try to use lambda function 
+-> filter, reduce, map
+
+-> alwasy use if __name__ == '__main__ in an executable file;
+-> mack sure to create an entry point in your code file.

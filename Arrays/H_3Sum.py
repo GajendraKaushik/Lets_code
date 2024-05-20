@@ -25,7 +25,7 @@ for it in ans:
     print("]", end="")
 print()
 
-# #rd aprroach is sort the array then use two pointer to solve it.
+# 3rd aprroach is sort the array then use two pointer to solve it.
 # time complexity O(n)
 def Optimal_3sum_two_Pointer(nums):
     ans = []

@@ -1,4 +1,4 @@
-def divide(self, dividend: int, divisor: int) -> int:
+def divide(dividend: int, divisor: int) -> int:
     # checking the if both divedend and divisor are same 
     if dividend == divisor:
         return 1
@@ -22,3 +22,4 @@ def divide(self, dividend: int, divisor: int) -> int:
         return res
     else:
         return - res
+print(divide(14, 7))

@@ -54,6 +54,7 @@ def optimal_approach(matrix, target):
         # converting the 2D array index in to one D array
         row = mid // m
         col = mid % m
+        print(row, col)
 
         if matrix[row][col] == target:
             return True
